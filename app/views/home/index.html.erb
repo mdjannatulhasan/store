@@ -1,0 +1,32 @@
+<div class="min-h-screen bg-gradient-to-br from-blue-50 to-indigo-100">
+    <div class="max-w-4xl mx-auto px-4 py-16">
+        <div class="text-center">
+            <h1 class="text-5xl font-bold text-gray-900 mb-6">🛍️ Welcome to My Store</h1>
+            <p class="text-xl text-indigo-600 mb-8">Your one-stop shopping destination for amazing products and deals!</p>
+            <p class="text-lg text-gray-600 mb-12 max-w-2xl mx-auto">Discover a world of quality products, exceptional service, and unbeatable prices. We're committed to bringing you the best shopping experience.</p>
+
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <%= render 'shared/atoms/button', text: 'Shop Now', variant: 'primary', size: 'lg' %>
+                <%= render 'shared/atoms/button', text: 'Browse Categories', variant: 'outline', size: 'lg' %>
+            </div>
+
+            <div class="mt-16 grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-white p-6 rounded-lg shadow-lg">
+                    <div class="text-3xl mb-4">🚚</div>
+                    <h3 class="text-xl font-semibold mb-2">Free Shipping</h3>
+                    <p class="text-gray-600">On orders over $50</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-lg">
+                    <div class="text-3xl mb-4">🔒</div>
+                    <h3 class="text-xl font-semibold mb-2">Secure Payment</h3>
+                    <p class="text-gray-600">100% secure checkout</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-lg">
+                    <div class="text-3xl mb-4">💬</div>
+                    <h3 class="text-xl font-semibold mb-2">24/7 Support</h3>
+                    <p class="text-gray-600">Always here to help</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

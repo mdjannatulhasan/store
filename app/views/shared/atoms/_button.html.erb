@@ -1,0 +1,27 @@
+<%
+    text ||= 'Button'
+    variant ||= 'primary'
+    size ||= 'md'
+    button_class ||= ''
+    
+    base_classes = "font-semibold rounded-lg transition duration-200 ease-in-out transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-offset-2"
+    
+    variant_classes = {
+        'primary' => "bg-blue-600 hover:bg-blue-700 text-white focus:ring-blue-500",
+        'secondary' => "bg-gray-600 hover:bg-gray-700 text-white focus:ring-gray-500", 
+        'success' => "bg-green-600 hover:bg-green-700 text-white focus:ring-green-500",
+        'outline' => "border-2 border-blue-600 text-blue-600 hover:bg-blue-600 hover:text-white focus:ring-blue-500"
+    }
+    
+    size_classes = {
+        'sm' => "px-3 py-2 text-sm",
+        'md' => "px-6 py-3 text-base",
+        'lg' => "px-8 py-4 text-lg"
+    }
+    
+    all_classes = "#{base_classes} #{variant_classes[variant]} #{size_classes[size]} #{button_class}".strip
+%>
+
+<button type="button" class="<%= all_classes %>">
+    <%= text %>
+</button>

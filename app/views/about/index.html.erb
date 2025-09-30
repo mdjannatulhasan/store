@@ -1,0 +1,80 @@
+<div class="min-h-screen bg-gradient-to-br from-green-50 to-blue-50">
+    <div class="max-w-6xl mx-auto px-4 py-16">
+        <!-- Hero Section -->
+        <div class="text-center mb-16">
+            <h1 class="text-5xl font-bold text-gray-900 mb-6">About My Store</h1>
+            <p class="text-xl text-gray-600 max-w-3xl mx-auto">We're passionate about bringing you the best products and shopping experience. Learn more about our story, mission, and the team behind your favorite store.</p>
+        </div>
+
+        <!-- Story Section -->
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 mb-16">
+            <div>
+                <h2 class="text-3xl font-bold text-gray-900 mb-6">Our Story</h2>
+                <p class="text-lg text-gray-600 mb-4">Founded in 2024, My Store began with a simple mission: to make quality products accessible to everyone. What started as a small online shop has grown into a trusted destination for thousands of customers worldwide.</p>
+                <p class="text-lg text-gray-600">We believe that shopping should be enjoyable, convenient, and secure. That's why we've built our platform with cutting-edge technology and a customer-first approach.</p>
+            </div>
+            <div class="bg-white p-8 rounded-lg shadow-lg">
+                <div class="text-6xl mb-4">🏪</div>
+                <h3 class="text-2xl font-semibold mb-4">Founded in 2024</h3>
+                <p class="text-gray-600">Starting with a vision to revolutionize online shopping</p>
+            </div>
+        </div>
+
+        <!-- Mission & Values -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
+            <div class="bg-white p-6 rounded-lg shadow-lg text-center">
+                <div class="text-4xl mb-4">🎯</div>
+                <h3 class="text-xl font-semibold mb-3">Our Mission</h3>
+                <p class="text-gray-600">To provide exceptional products and service that exceed customer expectations while maintaining the highest standards of quality and integrity.</p>
+            </div>
+            <div class="bg-white p-6 rounded-lg shadow-lg text-center">
+                <div class="text-4xl mb-4">💎</div>
+                <h3 class="text-xl font-semibold mb-3">Quality First</h3>
+                <p class="text-gray-600">Every product in our store is carefully selected and tested to ensure it meets our strict quality standards before reaching your doorstep.</p>
+            </div>
+            <div class="bg-white p-6 rounded-lg shadow-lg text-center">
+                <div class="text-4xl mb-4">🤝</div>
+                <h3 class="text-xl font-semibold mb-3">Customer Focus</h3>
+                <p class="text-gray-600">Your satisfaction is our priority. We're committed to providing outstanding customer service and support throughout your shopping journey.</p>
+            </div>
+        </div>
+
+        <!-- Team Section -->
+        <div class="bg-white rounded-lg shadow-lg p-8 mb-16">
+            <h2 class="text-3xl font-bold text-gray-900 mb-8 text-center">Meet Our Team</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="text-center">
+                    <div class="w-24 h-24 bg-blue-100 rounded-full mx-auto mb-4 flex items-center justify-center">
+                        <span class="text-2xl">👨‍💼</span>
+                    </div>
+                    <h3 class="text-lg font-semibold">John Smith</h3>
+                    <p class="text-gray-600">Founder & CEO</p>
+                </div>
+                <div class="text-center">
+                    <div class="w-24 h-24 bg-green-100 rounded-full mx-auto mb-4 flex items-center justify-center">
+                        <span class="text-2xl">👩‍💻</span>
+                    </div>
+                    <h3 class="text-lg font-semibold">Sarah Johnson</h3>
+                    <p class="text-gray-600">CTO</p>
+                </div>
+                <div class="text-center">
+                    <div class="w-24 h-24 bg-purple-100 rounded-full mx-auto mb-4 flex items-center justify-center">
+                        <span class="text-2xl">👨‍🎨</span>
+                    </div>
+                    <h3 class="text-lg font-semibold">Mike Chen</h3>
+                    <p class="text-gray-600">Head of Design</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- CTA Section -->
+        <div class="text-center bg-gradient-to-r from-blue-600 to-indigo-600 rounded-lg p-12 text-white">
+            <h2 class="text-3xl font-bold mb-4">Ready to Shop?</h2>
+            <p class="text-xl mb-8 opacity-90">Discover our amazing collection of products today!</p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <%= render 'shared/atoms/button', text: 'Browse Products', variant: 'secondary', size: 'lg' %>
+                <%= render 'shared/atoms/button', text: 'Contact Us', variant: 'outline', size: 'lg', button_class: 'border-white text-white hover:bg-white hover:text-blue-600' %>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,17 @@
+<%
+    text ||= 'Navigation Item'
+    is_active ||= false
+    mobile ||= false
+    
+    active_classes = is_active ? "bg-blue-100 text-blue-700" : ""
+    mobile_classes = mobile ? "block" : ""
+    all_classes = "#{mobile_classes} #{active_classes}".strip
+%>
+
+<li>
+    <%= render 'shared/atoms/link', 
+        url: url, 
+        text: text, 
+        variant: 'nav', 
+        class: all_classes %>
+</li>

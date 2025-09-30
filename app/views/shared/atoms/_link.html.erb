@@ -1,0 +1,30 @@
+<%
+    text ||= 'Link'
+    variant ||= 'default'
+    link_class ||= ''
+    external ||= false
+    
+    base_classes = "transition duration-200 ease-in-out"
+    
+    variant_classes = {
+        'default' => "text-blue-600 hover:text-blue-800 hover:underline",
+        'nav' => "text-gray-700 hover:text-blue-600 hover:underline px-3 py-2 rounded-md hover:bg-gray-100",
+        'button' => "inline-block bg-blue-600 hover:bg-blue-700 text-white font-semibold py-2 px-4 rounded-lg transition duration-200 ease-in-out transform hover:scale-105"
+    }
+    
+    all_classes = "#{base_classes} #{variant_classes[variant]} #{link_class}".strip
+%>
+
+<% if url.present? %>
+    <% if external || url.start_with?('http') %>
+        <a href="<%= url %>" class="<%= all_classes %>" target="_blank" rel="noopener noreferrer">
+            <%= text %>
+        </a>
+    <% else %>
+        <%= link_to text, url, class: all_classes %>
+    <% end %>
+<% else %>
+    <a class="<%= all_classes %>">
+        <%= text %>
+    </a>
+<% end %>
